@@ -12,7 +12,9 @@ Findings report path: <ABSOLUTE_PATH>/<REPO_NAME>-AUDIT-FINDINGS.md
 Inspect the whole repository, including source code, tests, configuration, build and release files, scripts, documentation, and dependency manifests. Identify bugs, security vulnerabilities, data-loss risks, unsafe defaults, and important documentation/code mismatches. Consider the project’s actual intended use and supported platforms.
 
 Rules:
-- Do not modify application or repository code. Only create or update the findings report.
+- Do not modify application or repository code. You may create only the findings report and, for each
+  confirmed finding, a regression guard under <ABSOLUTE_PATH>/audit-guards/ (never inside existing
+  source or test files).
 - Do not claim a finding is confirmed unless you can point to specific code or reproduce it. Clearly label suspected issues and residual risks.
 - Do not expose, copy, or include real secrets in the report.
 - Do not run destructive commands, access external systems, or test against systems without authorization.
