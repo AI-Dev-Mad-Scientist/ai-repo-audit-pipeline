@@ -41,6 +41,9 @@ Create the report with:
 - A coverage section listing major directories/components reviewed and anything not reviewed.
 - A test/tool section listing commands run and results.
 - If no confirmed findings are found, say so explicitly and summarize the review limits; do not invent findings.
+- For each confirmed finding, a regression guard: a test asserting the desired post-fix behavior
+  (marked as expected-to-fail until fixed, using your test framework's mechanism) or a standalone
+  repro script that is safe and local. State how to run it. If a guard isn't feasible, say why.
 
 Rank findings by severity first, then urgency to fix. Use a consistent severity scale (Critical, High, Medium, Low, Informational) and explain briefly how you applied it. Do not rank by project value or mix severity with fix priority.
 
