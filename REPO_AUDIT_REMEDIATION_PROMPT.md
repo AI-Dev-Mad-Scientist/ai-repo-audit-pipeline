@@ -54,7 +54,8 @@ Phase 1 — Build the patch proposal (book-phase; no repository changes):
    approving.
 7. Then STOP. Do not touch the repository. Ask the user to review the proposal and reply with an
    explicit approval, which may be per-group (e.g. "approve P0 only") — honor whatever they approve
-   and wait for no answer before acting.
+   and Do not act until the user replies with explicit approval. Honor exactly what they approve (e.g.
+"approve P0 only") and nothing more..
 
 Only if and as approved, Phase 2 — Execute:
 
