@@ -93,6 +93,6 @@ Rules (both phases):
 Replace the placeholders with the repository name, absolute path, and the two report paths. Keep this
 session separate from the audit and reviewer sessions. The proposal-and-wait design is deliberate: it
 prevents the fixer from interpreting "best patch" on its own, and gives the user a chance to reject
-behavior changes (e.g. strict host-key pinning, auth-flag changes) before any code is touched. If the
+behavior changes ((e.g. stricter validation, changed defaults, or changed CLI flags)) before any code is touched. If the
 reviewer report does not exist yet, run the verification session first — patches designed from an
 unverified audit inherit its errors.
